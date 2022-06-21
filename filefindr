@@ -1,0 +1,19 @@
+#!/usr/bin/bash
+
+#i want to write a script that will help me look for any file 
+
+echo -e "Enter the name of the file: \c"
+
+read filename
+
+if [ -e $filename ]
+
+then
+	echo 'File or Directory exists'
+	echo -e 'this is the absolute path to this file: \c'
+	readlink -f  $filename
+
+else 
+	echo 'No directory found'
+
+fi
