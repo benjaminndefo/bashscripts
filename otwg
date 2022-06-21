@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+echo -e "Enter Level Number: \c"
+
+read num
+
+ssh bandit$num@bandit.labs.overthewire.org -p 2220
+
+
+
